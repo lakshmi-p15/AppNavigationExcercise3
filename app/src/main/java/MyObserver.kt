@@ -1,7 +1,8 @@
 import android.system.Os.connect
 import android.util.Log
 import androidx.lifecycle.*
-import com.example.appnavigationexcercise3.LOG_TAG
+
+const val LOG_TAG = "lifecycle_monitor"
 
 class MyObserver : DefaultLifecycleObserver{
 

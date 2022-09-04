@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import com.example.appnavigationexcercise3.databinding.ActivityMainBinding
 
-const val LOG_TAG = "lifecycle_monitor"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
