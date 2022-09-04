@@ -1,5 +1,6 @@
 package com.example.appnavigationexcercise3
 
+import MyObserver
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,31 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.i(LOG_TAG, "onCreate")
+        lifecycle.addObserver(MyObserver())
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.i(LOG_TAG, "onStart")
-    }
 
-    override fun onResume() {
-        super.onResume()
-        Log.i(LOG_TAG, "onResume")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i(LOG_TAG, "onPause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.i(LOG_TAG, "onStop")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.i(LOG_TAG, "onDestroy")
-    }
 }
